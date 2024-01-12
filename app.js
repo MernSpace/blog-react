@@ -33,8 +33,8 @@ app.use(limiter)
 
 // Mongo DB Database Connection
 let URI="mongodb+srv://<username>:<pass>@cluster0.g7zuc4b.mongodb.net/blog";
-//mongodb+srv://sifat355y:sifat355y@cluster0.g7zuc4b.mongodb.net/
-let OPTION={user:'sifat355y',pass:'sifat355y',autoIndex:true}
+//mongodb+srv://:@cluster0.g7zuc4b.mongodb.net/
+let OPTION={user:'',pass:'',autoIndex:true}
 mongoose.connect(URI,OPTION).then((res)=>{
     console.log("Database Connected")
 }).catch((err)=>{
